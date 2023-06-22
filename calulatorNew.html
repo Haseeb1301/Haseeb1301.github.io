@@ -1,0 +1,39 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+    
+    </head>
+    <body>
+        <div class = "input-container">
+        <span>First number</span><input type="number" id="First_number">
+        </div>
+        <div class = "input-container">
+        <span>Second number</span><input type="number" id="Second_number">
+        </div>
+    <div class="result-container">
+        <div id="plus" class="result"> NaN </div>
+        <div id="minus" class="result"> NaN </div>
+        <div id="multipy" class="result"> NaN </div>
+        <div id="divide" class="result"> NaN </div>
+        <div id="reminder" class="result"> NaN </div>
+        <div id="exponent" class="result"> NaN </div>
+    </div>
+    <button onclick="calculate()"> Calculate </button>
+    <script>
+            function perform_operation(f, s, op){
+                return 'Function worked!'
+            }
+        function calculate() {
+            let First_number = document.getElementById("First_number").value;
+            let Second_number = document.getElementById("Second_number").value;
+
+            const result = document.getElementsByClassName("result");
+
+            for (let e of results){
+                let res = perform_operation(First_number, Second_number, e.id)
+                e.innerHTML = res;
+            }
+        }
+    </script>
+    </body>
+    </html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Muhammad_Haseeb_Usman</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {    
+    padding: 80px;
+    text-align: center;
+    background-image: url(header1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 60px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  
+}
+
+/* Footer */
+.footer {
+  padding: 8px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div style="color: white;" class="header">
+  <h1>Hi It's Haseeb</h1>
+  <p>A website created by Haseeb.</p>
+</div>
+
+<div class="navbar">
+  <a href="#">Email</a>
+  <a href="#">Facebook</a>
+  <a href="#">LinkedIn</a>
+  <a href="#" class="right">Contact</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>About me</h2>
+    <h3>Muhammad Haseeb Usman</h3>
+    <h5>Photo of me:</h5>
+    <div class="fakeimg" style="height:200px;">
+    <img src="mypic.jpeg" height="180px" width="360px" alt=""></div>
+    <p>I did MS in (Telecommunication and Networking) and BS in (Computer Science)</p>
+    <h3>Experience</h3>
+    <p>I am having more then 10 years working experience</p>
+    <div class="fakeimg" style="height:60px;">
+    <img src="PTA.png" height="55px" width="300px" alt=""></div><br>
+    <div class="fakeimg" style="height:60px;">
+    <img src="naizak.png" height="55px" width="300px" alt=""></div><br>
+    <div class="fakeimg" style="height:60px;">
+    <img src="STC.webp" height="55px" width="300px" alt=""></div>
+  </div>
+  <div class="main">
+    <h2>INFORMATION TECHNOLOGY</h2>
+    <h5>IT, June 22, 2023</h5>
+    <div class="fakeimg" style="height:200px;">
+    <img src="IT.jpeg" height="200px" width="900px" alt=""></div>
+    <p>Information technology (IT) is the use of any computers, storage, networking and other physical devices, infrastructure and processes to create, process, store, secure and exchange all forms of electronic data.</p>
+    <br>
+    <h2>ARTIFICIAL INTELLIGENCE</h2>
+    <h5>AI, June 22, 2023</h5>
+    <div class="fakeimg" style="height:200px;">
+    <img src="AI.png" height="200px" width="900px" alt=""></div>
+    <p>Artificial intelligence is the simulation of human intelligence processes by machines, especially computer systems. Specific applications of AI include expert systems, natural language processing, speech recognition and machine vision.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>“Just one small positive thought in the morning can change your whole day.”
+    <br>“Opportunities don't happen, you create them.”
+    <br>“Love your family, work super hard, live your passion.”
+    <br>“It is never too late to be what you might have been.” </h2>
+</div>
+
+</body>
+</html>
